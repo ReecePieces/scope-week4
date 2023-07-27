@@ -17,10 +17,16 @@ let result2 = arrowMyMap(['run', 'Forrest'], yell);
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 ***********************************************************************/
-let arrowMyMap.forEach((ele, cb) => {
+const arrowMyMap = function (array, cb) {
   let newArr = []
-  newArr.push(cb(ele))
-})
+  array.forEach((ele, cb) => {
+    newArr.push(cb(ele))
+  })
+  return newArr
+
+}
+
+
 
 
 // const arrowMyMap = ((array, cb) => {
