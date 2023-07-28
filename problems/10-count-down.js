@@ -28,10 +28,19 @@ Example 4:
 
 ***********************************************************************/
 
-let countDownTimer = ((n) => {
+function countDownTimer(n) {
+  let count = 0
+  let string = "Happy New Year"
+  return function (string) {
+    console.log(string)
 
+  }
 
-})
+}
+let threeDays = countDownTimer(3); // returns a function
+console.log(threeDays()); // returns a function
+console.log(threeDays()); // returns a function
+console.log(threeDays()); // prints "Happy New Year!"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
