@@ -16,7 +16,23 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
 ***********************************************************************/
 
-// Your code here
+function interrupter(interruptingWord) {
+
+  return function (string) {
+    const words = string.split(' ');
+    const sentence = words.map((word, index) => {
+      if (index === words.length - 1) {
+        return word;
+      } else {
+        return word + ' ' + interruptingWord;
+      }
+    })
+    return sentence.join(' ')
+  }
+}
+
+let rudePerson2 = interrupter("yo"); // => returns a function
+console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
