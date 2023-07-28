@@ -13,11 +13,14 @@ arrowRestSum(0); // => 0
 
 const arrowRestSum = ((...nums) => {
   let sum = 0
-  for (const num of nums)
+  for (const num of nums) {
     sum += num
-
-  return sum
+  }
+  console.log(sum)
 })
+arrowRestSum(3, 5, 6); // => 14
+arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 45
+arrowRestSum(0); // => 0
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
