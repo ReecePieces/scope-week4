@@ -18,8 +18,15 @@ divideByFive(50); // returns 10
 
 ***********************************************************************/
 
-// Your code here
+function dynamicDivide(divisor) {
+  let div = 1
+  return newFunc = ((num) => {
+    for (let el of num) {
 
+    }
+
+  })
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

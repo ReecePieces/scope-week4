@@ -14,6 +14,21 @@ function returned by recVolume should continue to return the original volume.
 ***********************************************************************/
 
 // Your code here
+let recVolume = (height) => {
+  let measurements = [height]
+  return innerFun = (num) => {
+    if (measurements.length === 3) {
+      return measurements.reduce((acc, num) => acc * num)
+    }
+    else {
+      measurements.push(num)
+      if (measurements.length === 3)
+        return measurements.reduce((acc, num) => acc * num)
+      else return innerFun
+    }
+  }
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
